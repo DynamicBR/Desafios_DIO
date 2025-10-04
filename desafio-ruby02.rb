@@ -1,12 +1,18 @@
+operacao = [1,2,3,4]
 opcao = nil
-while opcao != 0
+puts "1 Soma
+      2 Subtração
+      3 Multiplicação
+      4 Divisão
+Quais operações você quer fazer?: "
+opcao = gets.chomp.to_i
+while operacao.include?(opcao) == true  
   puts "1 Soma
-        2 Subtração
-        3 Multiplicação
-        4 Divisão
+      2 Subtração
+      3 Multiplicação
+      4 Divisão
   Quais operações você quer fazer?: "
   opcao = gets.chomp.to_i
-
   puts "Digite o primeiro número: "
   num1 = gets.chomp.to_i
 
@@ -31,5 +37,6 @@ while opcao != 0
 
     else
       puts "Opção inválida"
+
   end
 end
